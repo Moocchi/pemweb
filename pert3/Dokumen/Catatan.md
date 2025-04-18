@@ -92,7 +92,7 @@
 10. **Setelah itu migrate dan migrate fresh**
     ```bash
     php artisan migrate
-    php artisan migarte:fresh
+    php artisan migrate:fresh
     ```
 
 11. **Lakukan Generate shield sebelum seed**
