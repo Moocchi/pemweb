@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use App\Models\Footer;
 use Livewire\Component;
 
 class ShowHomePage extends Component{
@@ -10,4 +11,5 @@ class ShowHomePage extends Component{
     {
         return view('livewire.show-home-page');
     }
+
 }
