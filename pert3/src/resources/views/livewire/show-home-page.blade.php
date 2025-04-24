@@ -1,6 +1,9 @@
 @php
 use App\Models\PageConfig;
+use App\Models\CardConfig;
+
 $config = PageConfig::first();
+$cardconfig = CardConfig::first();
 @endphp
 
 <main>
@@ -15,12 +18,12 @@ $config = PageConfig::first();
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="ps-lg-5 text-center">
+            <div class="ps-lg-5 text-center">
             <img loading="lazy" decoding="async"
               src="{{ asset('storage/' . $config->image) }}"
-              alt="banner image" class="w-100">
-          </div>
-        </div>
+              alt="banner image" class="w-100" style="width: 400px; height: 550px; border-radius: 20%;">
+            </div>
+        </div> 
       </div>
     </div>
 
@@ -37,45 +40,40 @@ $config = PageConfig::first();
       <div class="col-lg-4 col-md-6 service-item">
         <a class="text-black" href="service-details.html">
           <div class="block"> <span class="colored-box text-center h3 mb-4">01</span>
-            <h3 class="mb-3 service-title">Digital Marketing</h3>
-            <p class="mb-0 service-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-              eirmod</p>
+            <h3 class="mb-3 service-title">{{ $cardconfig->title }}</h3>
+            <p class="mb-0 service-description">{{ $cardconfig->detail}}</p>
           </div>
         </a>
       </div>
       <div class="col-lg-4 col-md-6 service-item">
         <a class="text-black" href="service-details.html">
           <div class="block"> <span class="colored-box text-center h3 mb-4">02</span>
-            <h3 class="mb-3 service-title">Web Design</h3>
-            <p class="mb-0 service-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-              eirmod</p>
+            <h3 class="mb-3 service-title">{{ $cardconfig->skip(1)->first()->title }}</h3>
+            <p class="mb-0 service-description">{{ $cardconfig->skip(1)->first()->detail}}</p>
           </div>
         </a>
       </div>
       <div class="col-lg-4 col-md-6 service-item">
         <a class="text-black" href="service-details.html">
           <div class="block"> <span class="colored-box text-center h3 mb-4">03</span>
-            <h3 class="mb-3 service-title">SEO</h3>
-            <p class="mb-0 service-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-              eirmod</p>
+            <h3 class="mb-3 service-title">{{ $cardconfig->skip(2)->first()->title }}</h3>
+            <p class="mb-0 service-description">{{ $cardconfig->skip(2)->first()->detail}}</p>
           </div>
         </a>
       </div>
       <div class="col-lg-4 col-md-6 service-item">
         <a class="text-black" href="service-details.html">
           <div class="block"> <span class="colored-box text-center h3 mb-4">04</span>
-            <h3 class="mb-3 service-title">Logo Design</h3>
-            <p class="mb-0 service-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-              eirmod</p>
+            <h3 class="mb-3 service-title">{{ $cardconfig->skip(3)->first()->title }}</h3>
+            <p class="mb-0 service-description">{{ $cardconfig->skip(3)->first()->detail}}</p>
           </div>
         </a>
       </div>
       <div class="col-lg-4 col-md-6 service-item">
         <a class="text-black" href="service-details.html">
           <div class="block"> <span class="colored-box text-center h3 mb-4">05</span>
-            <h3 class="mb-3 service-title">Graphic Design</h3>
-            <p class="mb-0 service-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-              eirmod</p>
+            <h3 class="mb-3 service-title">{{ $cardconfig->skip(4)->first()->title }}</h3>
+            <p class="mb-0 service-description">{{ $cardconfig->skip(4)->first()->detail}}</p>
           </div>
         </a>
       </div>

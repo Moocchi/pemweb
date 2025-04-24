@@ -11,7 +11,7 @@ $logo = Logo::first();
     <nav class="navbar navbar-expand-xl navbar-light text-center py-3">
         <div class="container">
             <a class="navbar-brand" href="{{ route('home') }}">
-                <img loading="prelaod" decoding="async" class="img-fluid" width="160" src="{{ asset('front/images/logo.png') }}" alt="Wallet">
+                <img loading="preload" decoding="async" class="img-fluid" width="160" src="{{ asset('storage/' . $logo->image) }}" alt="Wallet">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

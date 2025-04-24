@@ -3,8 +3,10 @@
 namespace Database\Seeders;
 
 use App\Models\User;
+use Filament\Widgets\StatsOverviewWidget\Card;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+
 
 class DatabaseSeeder extends Seeder
 {
@@ -26,6 +28,7 @@ class DatabaseSeeder extends Seeder
             FooterSeeder::class,
             PageConfigSeeder::class,
             LogoSeeder::class,
+            CardConfigSeeder::class,
         ]);
     }
 }
