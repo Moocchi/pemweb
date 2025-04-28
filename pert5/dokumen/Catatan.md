@@ -346,7 +346,7 @@ return Application::configure(basePath: dirname(__DIR__))
 4. Dan Buat Add Request
 ![Gambar4](https://github.com/Moocchi/Gambar-gambar/blob/main/pemwebpert5/4.png)
 
-5. Lalu pergi ke authorisation dan pilih Bearer Token, lalu masukan API yang sudah di auto geerate tadi di Step pertama
+5. Lalu Tambahkan `http://localhost/api/products` dan pergi ke authorization lalu pilih Bearer Token, setelah itu masukan API yang sudah di auto geerate tadi di Step pertama
 ![Gambar5](https://github.com/Moocchi/Gambar-gambar/blob/main/pemwebpert5/5.png)
 
 6. Last Klik Send dan Tda DON!!!!!!!!!!!!!!!
