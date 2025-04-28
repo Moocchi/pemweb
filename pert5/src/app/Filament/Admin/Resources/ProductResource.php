@@ -17,7 +17,7 @@ class ProductResource extends Resource
 {
     protected static ?string $model = Product::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-shopping-bag';
 
     public static function form(Form $form): Form
     {
@@ -32,7 +32,7 @@ class ProductResource extends Resource
                 Forms\Components\TextInput::make('price')
                     ->required()
                     ->numeric()
-                    ->prefix('$'),
+                    ->prefix('Rp'),
             ]);
     }
 
@@ -46,7 +46,7 @@ class ProductResource extends Resource
                 Tables\Columns\TextColumn::make('name')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('price')
-                    ->money()
+                    ->formatStateUsing(fn (string $state): string => 'Rp ' . number_format((float) $state, 0, ',', '.'))
                     ->sortable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()

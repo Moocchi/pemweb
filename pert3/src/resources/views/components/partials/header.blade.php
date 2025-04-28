@@ -7,7 +7,7 @@
         <meta name="description" content="This is meta description">
         <meta name="author" content="Themefisher">
         <link rel="shortcut icon" href="{{ asset ('front/images/favicon.png') }}" type="image/x-icon">
-        <link rel="icon" href="{{ asset ('front/images/favicon.png') }}" type="image/x-icon">
+        <link rel="icon" href="{{ asset ('front/images/Phone-theme.jpg') }}" type="image/x-icon">
 
         <!-- # Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
