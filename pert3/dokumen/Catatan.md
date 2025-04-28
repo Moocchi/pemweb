@@ -84,7 +84,7 @@ Set DB connection:
 DB_CONNECTION=mysql
 DB_HOST=db_pemweb
 DB_PORT=3306
-DB_DATABASE=laravel
+DB_DATABASE=db_pemweb
 DB_USERNAME=root
 DB_PASSWORD=p455w0rd
 ```
