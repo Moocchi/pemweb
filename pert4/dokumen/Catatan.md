@@ -945,4 +945,4 @@ $logo = \App\Models\Logo::first();
 </main>
 ```
 
-Tinggal ubah isi database nya dan Selesai.
+Tinggal ubah isi database nya dan Selesai.don
